@@ -1,5 +1,5 @@
 function validaCPF(cpf) {
-    if(cpf.lenght != 11) {
+    if(cpf.length != 11) {
         return false;
     } else {
 
@@ -14,7 +14,7 @@ function validaCPF(cpf) {
         var resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
 
         // Validação do primeiro dígito
-        if(resultado != digitos.chartAt(0)) {
+        if(resultado != digitos.charAt(0)) {
             return false;
         }
 
@@ -28,7 +28,7 @@ function validaCPF(cpf) {
         resultado = (soma % 11) < 2 ? 0 : 11 - (soma % 11);
 
         // Validação do segundo dígito
-        if(resultado != digitos.chartAt(1)) {
+        if(resultado != digitos.charAt(1)) {
             return false;
         }
 
